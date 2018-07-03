@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-03T18:46:06.852Z</updated>
+  <updated>2018-07-03T18:48:07.892Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://www.xunhanliu.top/2018/07/04/test/"/>
     <id>https://www.xunhanliu.top/2018/07/04/test/</id>
     <published>2018-07-03T16:58:20.000Z</published>
-    <updated>2018-07-03T18:46:06.852Z</updated>
+    <updated>2018-07-03T18:48:07.892Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2018/07/04/test/Cat.jpg" alt="图片标题"><br><img src="/2018/07/04/test/Cat.jpg" title="[title]"><br>ssss</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2018/07/04/test/Cat.jpg" alt="图片标题"><br><img src="/2018/07/04/test/Cat.jpg" title="[title]"><br>连接为：&lt;%- url_for(post.path) %&gt;<br>连接1为：&lt;%- url_for(path) %&gt;<br>连接2为：&lt;%- url_for(page.path) %&gt;<br>ssss</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; title=&quot;[title]&quot;&gt;&lt;br&gt;ssss&lt;/p&gt;
-
+        &lt;p&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; title=&quot;[title]&quot;&gt;&lt;br&gt;连接为：&amp;lt;%- url_for(post.path) 
       
     
     </summary>
