@@ -145,8 +145,10 @@
                 <script type="text/javascript">
                     var picList= 'images/default_cover0.jpg,images/default_cover1.jpg';
                     picList=picList.split(",");
-                    var select_cover_pic = picList[Math.ceil(Math.random() * picList.length) - 1];
-                    $("#default_cover_pic").attr('src',(/^(http:|https:)?\/\//.test(select_cover_pic)) ? select_cover_pic :"https://www.xunhanliu.top"  + '/' + select_cover_pic );
+                    (function() {
+                        var select_cover_pic = picList[Math.ceil(Math.random() * picList.length) - 1];
+                        $("#default_cover_pic").attr('src',(/^(http:|https:)?\/\//.test(select_cover_pic)) ? select_cover_pic :"https://www.xunhanliu.top"  + '/' + select_cover_pic );
+                    })();
                 </script>
                 
             </a>
@@ -279,8 +281,10 @@
                 <script type="text/javascript">
                     var picList= 'images/default_cover0.jpg,images/default_cover1.jpg';
                     picList=picList.split(",");
-                    var select_cover_pic = picList[Math.ceil(Math.random() * picList.length) - 1];
-                    $("#default_cover_pic").attr('src',(/^(http:|https:)?\/\//.test(select_cover_pic)) ? select_cover_pic :"https://www.xunhanliu.top"  + '/' + select_cover_pic );
+                    (function() {
+                        var select_cover_pic = picList[Math.ceil(Math.random() * picList.length) - 1];
+                        $("#default_cover_pic").attr('src',(/^(http:|https:)?\/\//.test(select_cover_pic)) ? select_cover_pic :"https://www.xunhanliu.top"  + '/' + select_cover_pic );
+                    })();
                 </script>
                 
             </a>
