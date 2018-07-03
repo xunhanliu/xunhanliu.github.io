@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-03T17:19:46.236Z</updated>
+  <updated>2018-07-03T17:25:59.091Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://www.xunhanliu.top/2018/07/04/test/"/>
     <id>https://www.xunhanliu.top/2018/07/04/test/</id>
     <published>2018-07-03T16:58:20.000Z</published>
-    <updated>2018-07-03T17:19:46.236Z</updated>
+    <updated>2018-07-03T17:25:59.091Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/test/Cat.jpg" alt="miho"><br>ssss</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="test/Cat.jpg" alt="图片标题"><br>ssss</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/test/Cat.jpg&quot; alt=&quot;miho&quot;&gt;&lt;br&gt;ssss&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;test/Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;ssss&lt;/p&gt;
 
       
     
