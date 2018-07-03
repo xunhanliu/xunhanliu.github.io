@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-03T14:20:54.994Z</updated>
+  <updated>2018-07-03T17:19:46.236Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://www.xunhanliu.top/2018/07/04/test/"/>
+    <id>https://www.xunhanliu.top/2018/07/04/test/</id>
+    <published>2018-07-03T16:58:20.000Z</published>
+    <updated>2018-07-03T17:19:46.236Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/test/Cat.jpg" alt="miho"><br>ssss</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/test/Cat.jpg&quot; alt=&quot;miho&quot;&gt;&lt;br&gt;ssss&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="mCat1" scheme="https://www.xunhanliu.top/categories/mCat1/"/>
+    
+    
+      <category term="mtag1" scheme="https://www.xunhanliu.top/tags/mtag1/"/>
+    
+      <category term="mtag2" scheme="https://www.xunhanliu.top/tags/mtag2/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
