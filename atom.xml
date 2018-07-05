@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-03T19:16:29.060Z</updated>
+  <updated>2018-07-05T14:24:16.394Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -17,43 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test1</title>
-    <link href="https://www.xunhanliu.top/2018/07/04/test1/"/>
-    <id>https://www.xunhanliu.top/2018/07/04/test1/</id>
-    <published>2018-07-03T19:15:16.000Z</published>
-    <updated>2018-07-03T19:16:29.060Z</updated>
-    
-    <content type="html"><![CDATA[<p>随便写点</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;随便写点&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="6大车蛋" scheme="https://www.xunhanliu.top/tags/6%E5%A4%A7%E8%BD%A6%E8%9B%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>test</title>
     <link href="https://www.xunhanliu.top/2018/07/04/test/"/>
     <id>https://www.xunhanliu.top/2018/07/04/test/</id>
     <published>2018-07-03T16:58:20.000Z</published>
-    <updated>2018-07-03T19:05:05.404Z</updated>
+    <updated>2018-07-05T14:24:16.394Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="./Cat.jpg" alt="图片标题"><br><img src="/2018/07/04/test/Cat.jpg" title="[title]"><br>连接为：&lt;%- url_for(post.path) %&gt;<br>连接1为：&lt;%- url_for(path) %&gt;<br>连接2为：&lt;%- url_for(page.path) %&gt;<br>ssss</p>]]></content>
+    <content type="html"><![CDATA[<p>测试图片链接<br><img src="./Cat.jpg" alt="图片标题"><br><img src="/2018/07/04/test/Cat.jpg" title="[title]"><br>连接为：&lt;%- url_for(post.path) %&gt;<br>连接1为：&lt;%- url_for(path) %&gt;<br>连接2为：&lt;%- url_for(page.path) %&gt;<br>ssss</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;./Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; title=&quot;[title]&quot;&gt;&lt;br&gt;连接为：&amp;lt;%- url_for(post.path) %&amp;gt;&lt;br&gt;连接1为：&amp;
+        &lt;p&gt;测试图片链接&lt;br&gt;&lt;img src=&quot;./Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; title=&quot;[title]&quot;&gt;&lt;br&gt;连接为：&amp;lt;%- url_for(post.path) %&amp;gt;
       
     
     </summary>
@@ -119,6 +95,60 @@
       <category term="博客" scheme="https://www.xunhanliu.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
       <category term="开源项目" scheme="https://www.xunhanliu.top/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>md文件模板+html</title>
+    <link href="https://www.xunhanliu.top/2017/08/01/testHtml/"/>
+    <id>https://www.xunhanliu.top/2017/08/01/testHtml/</id>
+    <published>2017-07-31T16:00:00.000Z</published>
+    <updated>2018-07-05T14:12:53.123Z</updated>
+    
+    <content type="html"><![CDATA[     <div class="article-entry post-content" itemprop="articleBody">                              <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>             </div>          ]]></content>
+    
+    <summary type="html">
+    
+      
+      
+         
+    &lt;div class=&quot;article-entry post-content&quot; itemprop=&quot;articleBody&quot;&gt;
+      
+            
+            &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io
+      
+    
+    </summary>
+    
+      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test_Md+Html</title>
+    <link href="https://www.xunhanliu.top/2017/08/01/testMd+Html/"/>
+    <id>https://www.xunhanliu.top/2017/08/01/testMd+Html/</id>
+    <published>2017-07-31T16:00:00.000Z</published>
+    <updated>2018-07-05T15:05:46.931Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><div style="background-color: #f00;">内联style</div><br><img src="./test.jpg" alt="外部图片，img标签"><br>—<br># 又一个title<br>—<br><h2 class="headerlink">2级标题</h2><br><h3 class="headerlink">3级标题</h3><br><h4 class="headerlink">4级标题</h4><br><link href="../../../../css/test.css" rel="stylesheet"><br><div id="outCSS">外联style</div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
     
   </entry>
   
