@@ -12,11 +12,11 @@
 <meta name="keywords" content="t-sne">
 <meta property="og:type" content="article">
 <meta property="og:title" content="t-sne之初体验">
-<meta property="og:url" content="https://www.xunhanliu.top/2018/07/06/t-sne之初体验/index.html">
+<meta property="og:url" content="https://www.xunhanliu.top/2018/07/06/t-sne_how_use/index.html">
 <meta property="og:site_name" content="xunhan">
 <meta property="og:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-05T20:45:30.349Z">
+<meta property="og:updated_time" content="2018-07-05T20:53:04.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="t-sne之初体验">
 <meta name="twitter:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
@@ -132,7 +132,7 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-t-sne之初体验" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-t-sne_how_use" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -168,7 +168,7 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h2 id="t-sen第一贱开锋"><a href="#t-sen第一贱开锋" class="headerlink" title="t-sen第一贱开锋"></a>t-sen第一贱开锋</h2><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><p><a href="：https://distill.pub/2016/misread-tsne/">原文链接</a><br>&emsp;&emsp;t-sen（非线性）在2008年首次被 <a href="http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf" target="_blank" rel="noopener">Maaten and Hinton引入(PDF)</a>，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sen每次输出的图像都是不固定。</p>
+            <h3 id="t-sen第一贱开锋"><a href="#t-sen第一贱开锋" class="headerlink" title="t-sen第一贱开锋"></a>t-sen第一贱开锋</h3><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><p><a href="：https://distill.pub/2016/misread-tsne/">原文链接</a><br>&emsp;&emsp;t-sen（非线性）在2008年首次被 <a href="http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf" target="_blank" rel="noopener">Maaten and Hinton引入(PDF)</a>，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sen每次输出的图像都是不固定。</p>
 <h3 id="2、初步体验perplexity参数和step参数"><a href="#2、初步体验perplexity参数和step参数" class="headerlink" title="2、初步体验perplexity参数和step参数"></a>2、初步体验perplexity参数和step参数</h3><p>&emsp;&emsp;@@@@@@@@@@@@@@@@@@@@@@@@@<br>&emsp;&emsp;上图由于perplexity参数的不同，呈现出不同的结果（每个图都执行了5000次迭代）。最重要的是在它们达到稳定状态的时候，如何解释！<br>&emsp;&emsp;@@@@@@@@@@@@@@@@@@@@@@@@@<br>&emsp;&emsp;上图的perplexity都是 30，而step分别是：10、20、60、120、1000。没有固定的步数，不同的数据集需要不同的迭代次数来收敛。不同的数据集可能聚合成相似的结果。</p>
 <h3 id="3、簇的大小无意义"><a href="#3、簇的大小无意义" class="headerlink" title="3、簇的大小无意义"></a>3、簇的大小无意义</h3><p>&emsp;&emsp;想一下这个问题：有两簇数据，它们的标准差不一样，是不是意味着标准差越小，簇越小？<br>&emsp;&emsp;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<br>&emsp;&emsp;上图中，一个簇的分散程度是另一个簇的10倍（点数应该是一样的）。调整perplexity，结果如上。结论是：簇的大小无意义。</p>
 <h3 id="4、簇之间的距离可能无意义"><a href="#4、簇之间的距离可能无意义" class="headerlink" title="4、簇之间的距离可能无意义"></a>4、簇之间的距离可能无意义</h3><p>&emsp;&emsp;问题：距离越近是不是关系越强？<br>&emsp;&emsp;@@@@@@@@@@@@@@@@@@@@@@@@@@@<br>&emsp;&emsp;上图中初始点是3簇，它们均有50点，均满足高斯分布。一对的距离是另一对的5倍。<br>&emsp;&emsp;上图实验结果如下：perplexity=50的时候，几何结构非常好。&lt;50的时候，它们间距都差不多。=100的时候，其中一个簇非常小。=50的时候，结果非常“理想”，是不是意味着设置成50，我们总能看到好的结果？<br>&emsp;&emsp;Sadly, no！ 如果我们增加了点数，就需要增加perplexity进行补偿。下面这个实验吧点数增加到200。<br>&emsp;&emsp;@@@@@@@@@@@@@@@@@@@@@@@@@</p>
@@ -179,8 +179,8 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月06日 04:45</p>
-        <p>原始链接： <a class="post-url" href="/2018/07/06/t-sne之初体验/" title="t-sne之初体验">https://www.xunhanliu.top/2018/07/06/t-sne之初体验/</a></p>
+        <p>最后更新： 2018年07月06日 04:53</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/06/t-sne_how_use/" title="t-sne之初体验">https://www.xunhanliu.top/2018/07/06/t-sne_how_use/</a></p>
         <footer>
             <a href="https://www.xunhanliu.top">
                 <img src="/images/logo.png" alt="xunhanliu">
@@ -237,7 +237,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/&title=《t-sne之初体验》 — xunhan&pic=2018/07/06/t-sne之初体验/trefoil.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne之初体验》 — xunhan&pic=2018/07/06/t-sne_how_use/trefoil.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -247,22 +247,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/&title=《t-sne之初体验》 — xunhan&source=这是训瀚的博客" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne之初体验》 — xunhan&source=这是训瀚的博客" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《t-sne之初体验》 — xunhan&url=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/&via=https://www.xunhanliu.top" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《t-sne之初体验》 — xunhan&url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&via=https://www.xunhanliu.top" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -272,7 +272,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://www.xunhanliu.top/2018/07/06/t-sne之初体验/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -297,7 +297,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#t-sen第一贱开锋"><span class="post-toc-text">t-sen第一贱开锋</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、初步体验perplexity参数和step参数"><span class="post-toc-text">2、初步体验perplexity参数和step参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、簇的大小无意义"><span class="post-toc-text">3、簇的大小无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、簇之间的距离可能无意义"><span class="post-toc-text">4、簇之间的距离可能无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、随机点的结果并不总是随机的"><span class="post-toc-text">5、随机点的结果并不总是随机的</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、有时，你会看到一些形状"><span class="post-toc-text">6、有时，你会看到一些形状</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、拓扑数据，你可能需要更多的图"><span class="post-toc-text">7、拓扑数据，你可能需要更多的图</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、结论"><span class="post-toc-text">8、结论</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#t-sen第一贱开锋"><span class="post-toc-text">t-sen第一贱开锋</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、初步体验perplexity参数和step参数"><span class="post-toc-text">2、初步体验perplexity参数和step参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、簇的大小无意义"><span class="post-toc-text">3、簇的大小无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、簇之间的距离可能无意义"><span class="post-toc-text">4、簇之间的距离可能无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、随机点的结果并不总是随机的"><span class="post-toc-text">5、随机点的结果并不总是随机的</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、有时，你会看到一些形状"><span class="post-toc-text">6、有时，你会看到一些形状</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、拓扑数据，你可能需要更多的图"><span class="post-toc-text">7、拓扑数据，你可能需要更多的图</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、结论"><span class="post-toc-text">8、结论</span></a></li></ol>
         </nav>
     </aside>
     
