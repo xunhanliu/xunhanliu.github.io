@@ -1,3 +1,5 @@
+//自定义全局JS变量
+var particle_color='#0f0';
 (function (w, d) {
     var body = $('body, html'),
         toc = $("#post-toc"),
