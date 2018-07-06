@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-06T19:01:31.410Z</updated>
+  <updated>2018-07-06T20:35:58.208Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在hexo上编写高级markdown</title>
+    <link href="https://www.xunhanliu.top/2018/07/07/advanced-markdown/"/>
+    <id>https://www.xunhanliu.top/2018/07/07/advanced-markdown/</id>
+    <published>2018-07-06T18:17:00.000Z</published>
+    <updated>2018-07-06T20:35:58.208Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.xunhanliu.top/2018/07/06/t-sne_how_use">附上一个优秀的博客链接</a></p><h3 id="钻石"><a href="#钻石" class="headerlink" title="钻石"></a>钻石</h3><p>&emsp;&emsp;我们都知道markdown可以嵌入html代码的。比如想把一段文字加个背景色。可以这样写（直接写就行）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=<span class="string">"background-color: #f00;"</span>&gt;一段文字&lt;p&gt;</span><br></pre></td></tr></table></figure></p><p>效果：</p><p style="background-color: #f00;">一段文字</p><p><br>。可见，它完全按照自己的想法执行。这是高级一点的用法。<br>&emsp;&emsp;下图是一个例子<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=<span class="string">"color: #0f0;"</span>&gt;外联style&lt;p&gt;</span><br></pre></td></tr></table></figure></p><p>而前面的标题使用markdown语法写的。结果理想。不过左侧有点问题，就是标题的问题。就是我们使用标题的时候，一定要先出现高级标题，然后才能出现低级标题（正常的思路，类似文章的章节一样）。文档使用的模板是MIHO。<br><br><img src="./title_bug.png" alt="title有小问题"><br>&emsp;&emsp;下图是高级用法的一个例子：<br><br>你没有看错，所有的标签与markdown的标志都正确的解析了！！<br><img src="./perfect.png.png" alt="perfect"><br>相关部分源码如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">More info: [Generating](https://hexo.io/docs/generating.html)</span><br><span class="line"></span><br><span class="line"><span class="comment">### Deploy to remote sites</span></span><br><span class="line"></span><br><span class="line">\``` bash</span><br><span class="line">$ hexo deploy</span><br><span class="line">\</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="内联style"><a href="#内联style" class="headerlink" title="内联style"></a><div style="background-color: #f00;">内联style</div></h2><h1 id="又一个title"><a href="#又一个title" class="headerlink" title="又一个title"></a>又一个title</h1><hr><p></p><h2 class="headerlink">h2标签</h2><p></p><p><link href="../../../../css/test.css" rel="stylesheet"></p><p><div id="outCSS">外联style</div></p><h1 id="再来一个title"><a href="#再来一个title" class="headerlink" title="再来一个title"></a>再来一个title</h1><p><code>`</code><br>&emsp;&emsp;至此，你可能会觉得，哦，原来混合编辑这么简单！对钻石就这么简单。<br><br>&emsp;&emsp;再看一个例子:<br>下图中的点图都是可以交互的！所以他们肯定是一个大的<code>div</code>。我们可以看到，最左侧的标题5，是没有正确解析的，不止如此，我又在div的两头各加了一个<code>&lt;br&gt;</code>。经检查发现，文档中某些地方出现非标准的标签比如<code>&lt;dt-div&gt;&lt;/dt-div&gt;</code> 。但是可以肯定的是下图中的几个标签都是<code>div</code>。<br><img src="./md_bug.png" alt="markdown &quot;Bug&quot;"><br></p><h3 id="王者"><a href="#王者" class="headerlink" title="王者"></a>王者</h3><p>&emsp;&emsp;我把这些非标准的标签都换成div后，网页形式就变成了这样（<a href="https://www.xunhanliu.top/2018/07/07/md+html_complex/）">https://www.xunhanliu.top/2018/07/07/md+html_complex/）</a><br>不像我们一开始想的那样。第一个大<code>div</code>后的markdown标签都没有正确解析，而像把它们放在了<code>p</code>标签里了一样。不过这已经很接近我们的布局了：加几个<code>&lt;br&gt;</code> ,把标题手动更改成<code>h</code>标签。<br><br>&emsp;&emsp;所以结论是，简单的标签直接写就能完美解析，像div这种高级标签，此标签后面的内容，一般不会得到markdown编译。</p><h4 id="附：不一定是-md后缀，也可以是-html后缀"><a href="#附：不一定是-md后缀，也可以是-html后缀" class="headerlink" title="附：不一定是.md后缀，也可以是.html后缀"></a>附：不一定是<code>.md</code>后缀，也可以是<code>.html</code>后缀</h4><p>&emsp;&emsp;对于复杂的笔记，不一定要用<code>markdown</code>语法去写，我可以全部使用<code>html</code>。不过有些人可能觉得有点麻烦。这里提供一个新的思路：先用markdown写出大体的框架来，把写<code>div</code>标签的空间留下来。然后编译，找到编译后的文件，复制粘贴。笔记后缀名不一定是<code>.md</code>，也可以是<code>html</code>！<br>见：<a href="https://www.xunhanliu.top/2018/07/06/t-sne_how_use">https://www.xunhanliu.top/2018/07/06/t-sne_how_use</a> .<br>不过你可以使用前面的方法编写，更加简单！<br><br>说明：这一篇我用了大概3个小时去找bug，前面那一篇我只用了两分钟。可能是有做完第一篇的基础吧。不过使用先编译，再复制粘贴的方法，容易在标签开闭、漏写上犯错（me too!），况且使用hexo编译后也不报错（可能觉得，大不了我把你这全部便签都看成普通文本）。然后访问网址，出现了一个奇葩的错误，浏览器竟然改了我某个js文件。。。各种心酸历程！</p><h4 id="附3：爬网页文件：webzip-，绝对良心软件！"><a href="#附3：爬网页文件：webzip-，绝对良心软件！" class="headerlink" title="附3：爬网页文件：webzip ，绝对良心软件！"></a>附3：爬网页文件：webzip ，绝对良心软件！</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.xunhanliu.top/2018/07/06/t-sne_how_use&quot;&gt;附上一个优秀的博客链接&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;钻石&quot;&gt;&lt;a href=&quot;#钻石&quot; class=&quot;headerlink&quot; title=&quot;钻石&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="markdown" scheme="https://www.xunhanliu.top/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="https://www.xunhanliu.top/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>md+html_complex</title>
@@ -150,31 +176,6 @@
   </entry>
   
   <entry>
-    <title>test_Md+Html</title>
-    <link href="https://www.xunhanliu.top/2017/08/01/testMd+Html/"/>
-    <id>https://www.xunhanliu.top/2017/08/01/testMd+Html/</id>
-    <published>2017-07-31T16:00:00.000Z</published>
-    <updated>2018-07-06T18:12:20.241Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="内联style"><a href="#内联style" class="headerlink" title="内联style"></a><div style="background-color: #f00;">内联style</div></h2><h1 id="又一个title"><a href="#又一个title" class="headerlink" title="又一个title"></a>又一个title</h1><hr><p></p><h2 class="headerlink">h2标签</h2><p></p><p><link href="../../../../css/test.css" rel="stylesheet"></p><p><div id="outCSS">外联style</div></p><h1 id="再来一个title"><a href="#再来一个title" class="headerlink" title="再来一个title"></a>再来一个title</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
-    
-    
-      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
     <title>md文件模板+html</title>
     <link href="https://www.xunhanliu.top/2017/08/01/testHtml/"/>
     <id>https://www.xunhanliu.top/2017/08/01/testHtml/</id>
@@ -192,6 +193,31 @@
       
             
             &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io
+      
+    
+    </summary>
+    
+      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test_Md+Html</title>
+    <link href="https://www.xunhanliu.top/2017/08/01/testMd+Html/"/>
+    <id>https://www.xunhanliu.top/2017/08/01/testMd+Html/</id>
+    <published>2017-07-31T16:00:00.000Z</published>
+    <updated>2018-07-06T18:12:20.241Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="内联style"><a href="#内联style" class="headerlink" title="内联style"></a><div style="background-color: #f00;">内联style</div></h2><h1 id="又一个title"><a href="#又一个title" class="headerlink" title="又一个title"></a>又一个title</h1><hr><p></p><h2 class="headerlink">h2标签</h2><p></p><p><link href="../../../../css/test.css" rel="stylesheet"></p><p><div id="outCSS">外联style</div></p><h1 id="再来一个title"><a href="#再来一个title" class="headerlink" title="再来一个title"></a>再来一个title</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>
