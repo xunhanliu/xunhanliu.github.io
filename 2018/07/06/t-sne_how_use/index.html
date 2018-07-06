@@ -8,18 +8,18 @@
   
     <meta name="keywords" content="xunhan,xunhan's Blog" />
   
-  <meta name="description" content="How to Use t-SNE Effectively How to Use t-SNE Effectively   Although extremely useful for visualizing high-dimensional data, t-SNE plots can sometimes be mysterious or misleading. By ex">
+  <meta name="description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
 <meta name="keywords" content="test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="t-sne之初体验">
 <meta property="og:url" content="https://www.xunhanliu.top/2018/07/06/t-sne_how_use/index.html">
 <meta property="og:site_name" content="xunhan">
-<meta property="og:description" content="How to Use t-SNE Effectively How to Use t-SNE Effectively   Although extremely useful for visualizing high-dimensional data, t-SNE plots can sometimes be mysterious or misleading. By ex">
+<meta property="og:description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-06T17:23:10.413Z">
+<meta property="og:updated_time" content="2018-07-06T17:26:30.622Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="t-sne之初体验">
-<meta name="twitter:description" content="How to Use t-SNE Effectively How to Use t-SNE Effectively   Although extremely useful for visualizing high-dimensional data, t-SNE plots can sometimes be mysterious or misleading. By ex">
+<meta name="twitter:description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -169,6 +169,12 @@
       
             
             
+<h3 id="t-sen第一贱开锋"><a href="#t-sen第一贱开锋" class="headerlink" title="t-sen第一贱开锋"></a>t-sen第一贱开锋</h3><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3>
+<p><a href="https://distill.pub/2016/misread-tsne/" target="_blank" rel="noopener">原文链接</a><br>&emsp;&emsp;t-sen（非线性）在2008年首次被
+    <dt-cite key="maaten2008visualizing"><span id="citation-0" data-hover-ref="dt-cite-hover-box-0">van der Maaten and Hinton in 2008 <span class="citation-number">[1]</span></span></dt-cite>
+    引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sen每次输出的图像都是不固定。
+</p>
+
 
 <link href="../../../../css/tsne-how_use/material-icons.css" rel="stylesheet">
 <script src="../../../../js/tsne-how_use/d3.min.js"></script>
@@ -181,9 +187,7 @@
 
 
 
-  <p>How to Use t-SNE Effectively</p>
-<h1 class="l-middle">How to Use t-SNE Effectively</h1>
-  <h2 class="l-middle">Although extremely useful for visualizing high-dimensional data, t-SNE plots can sometimes be mysterious or misleading. By exploring how it behaves in simple cases, we can learn to use it more effectively.</h2>
+  
 
 
 <!-- 上面的悬浮框-->
@@ -747,29 +751,12 @@
     </dt-include>
   </div>
 
-  <p>A popular method for exploring high-dimensional data is something called t-SNE, introduced by <dt-cite key="maaten2008visualizing"><span id="citation-0" data-hover-ref="dt-cite-hover-box-0">van der Maaten and Hinton in 2008 <span class="citation-number">[1]</span></span></dt-cite>. The technique has become widespread in the field of machine learning, since it has an almost magical ability to create compelling two-dimensonal “maps” from data with hundreds or even thousands of dimensions.
-    Although impressive, these images can be tempting to misread. The purpose of this note is to prevent some common misreadings.</p>
-
-  <p>We’ll walk through a series of simple examples to illustrate what t-SNE diagrams can and cannot show. The t-SNE technique really is useful—but only if you know how to interpret it.</p>
-
-  <p>Before diving in: if you haven’t encountered t-SNE before, here’s what you need to know about the math behind it. The goal is to take a set of points in a high-dimensional space and find a faithful representation of those points in a lower-dimensional space, typically the 2D plane. The algorithm is non-linear and adapts to the underlying data, performing different transformations on different regions. Those differences can be a major source of confusion.</p>
-
-  <p>A second feature of t-SNE is a tuneable parameter, “perplexity,” which says (loosely) how to balance attention between local and global aspects of your data. The parameter is, in a sense, a guess about the number of close neighbors each point has. The perplexity value has a complex effect on the resulting pictures. The original paper says, <em>“The performance of SNE is fairly robust to changes in the perplexity, and typical values are between 5 and 50.”</em> But the story is more nuanced than that. Getting the most from t-SNE may mean analyzing multiple plots with different perplexities.</p>
-
-  <p>That’s not the end of the complications. The t-SNE algorithm doesn’t always produce similar output on successive runs, for example, and there are additional hyperparameters related to the optimization process.</p>
-
-  <hr>
-
-  <h2>1. Those hyperparameters really matter</h2>
-
-  <p>Let’s start with the “hello world” of t-SNE: a data set of two widely separated clusters. To make things as simple as possible, we’ll consider clusters in a 2D plane, as shown in the lefthand diagram. (For clarity, the two clusters are color coded.) The diagrams at right show t-SNE plots for five different perplexity values.</p>
+  <h3 id="2、初步体验perplexity参数和step参数"><a href="#2、初步体验perplexity参数和step参数" class="headerlink" title="2、初步体验perplexity参数和step参数"></a>2、初步体验perplexity参数和step参数</h3>
 
   <div class="l-page-outset tsne-group" id="figures-01" data-id="01">
   </div>
 
-  <p>With perplexity values in the range (5 - 50) suggested by van der Maaten &amp; Hinton, the diagrams do show these clusters, although with very different shapes. Outside that range, things get a little weird. With perplexity 2, local variations dominate. The image for perplexity 100, with merged clusters, illustrates a pitfall: for the algorithm to operate properly, the perplexity really should be smaller than the number of points. Implementations can give unexpected behavior otherwise.</p>
-
-  <p>Each of the plots above was made with 5,000 iterations with a learning rate (often called “epsilon”) of 10, and had reached a point of stability by step 5,000. How much of a difference do those values make? In our experience, the most important thing is to iterate until reaching a stable configuration.</p>
+  <p>&emsp;&emsp;上图由于perplexity参数的不同，呈现出不同的结果（每个图都执行了5000次迭代）。最重要的是在它们达到稳定状态的时候，如何解释！</p><br>
 
   <div class="l-page-outset tsne-group" id="figures-02" data-id="02">
   </div>
@@ -1270,7 +1257,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月07日 01:23</p>
+        <p>最后更新： 2018年07月07日 01:26</p>
         <p>原始链接： <a class="post-url" href="/2018/07/06/t-sne_how_use/" title="t-sne之初体验">https://www.xunhanliu.top/2018/07/06/t-sne_how_use/</a></p>
         <footer>
             <a href="https://www.xunhanliu.top">
@@ -1388,7 +1375,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">How to Use t-SNE Effectively</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">Although extremely useful for visualizing high-dimensional data, t-SNE plots can sometimes be mysterious or misleading. By exploring how it behaves in simple cases, we can learn to use it more effectively.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">1. Those hyperparameters really matter</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">2. Cluster sizes in a t-SNE plot mean nothing</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">3. Distances between clusters might not mean anything</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">4. Random noise doesn’t always look random.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">5. You can see some shapes, sometimes</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">6. For topology, you may need more than one plot</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">Conclusion</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#t-sen第一贱开锋"><span class="post-toc-text">t-sen第一贱开锋</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、初步体验perplexity参数和step参数"><span class="post-toc-text">2、初步体验perplexity参数和step参数</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">2. Cluster sizes in a t-SNE plot mean nothing</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">3. Distances between clusters might not mean anything</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">4. Random noise doesn’t always look random.</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">5. You can see some shapes, sometimes</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">6. For topology, you may need more than one plot</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-text">Conclusion</span></a>
         </nav>
     </aside>
     
