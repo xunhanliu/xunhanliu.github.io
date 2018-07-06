@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="xunhan">
 <meta property="og:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-06T18:49:32.269Z">
+<meta property="og:updated_time" content="2018-07-06T18:52:04.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="md+html_complex">
 <meta name="twitter:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
@@ -738,11 +738,11 @@
 <br>
 
 ### 2、初步体验perplexity参数和step参数  
-<div class="l-page-outset tsne-group" id="figures-01" data-id="01">
+<br><div class="l-page-outset tsne-group" id="figures-01" data-id="01">
   </div><br>  
 &emsp;&emsp;上图由于perplexity参数的不同，呈现出不同的结果（每个图都执行了5000次迭代）。最重要的是在它们达到稳定状态的时候，如何解释！
 
- <div class="l-page-outset tsne-group" id="figures-02" data-id="02">
+ <br><div class="l-page-outset tsne-group" id="figures-02" data-id="02">
   </div><br>
 &emsp;&emsp;上图的perplexity都是 30，而step分别是：10、20、60、120、1000。没有固定的步数，不同的数据集需要不同的迭代次数来收敛。不同的数据集可能聚合成相似的结果。
 
@@ -750,7 +750,7 @@
 
 ### 3、簇的大小无意义
 &emsp;&emsp;想一下这个问题：有两簇数据，它们的标准差不一样，是不是意味着标准差越小，簇越小？
- <div class="l-page-outset tsne-group" id="figures-03" data-id="03">
+ <br><div class="l-page-outset tsne-group" id="figures-03" data-id="03">
   </div> <br> 
 &emsp;&emsp;上图中，一个簇的分散程度是另一个簇的10倍（点数应该是一样的）。调整perplexity，结果如上。结论是：簇的大小无意义。
 
@@ -758,16 +758,16 @@
 
 ### 4、簇之间的距离可能无意义
 &emsp;&emsp;问题：距离越近是不是关系越强？
- <div class="l-page-outset tsne-group" id="figures-04" data-id="04">
+ <br><div class="l-page-outset tsne-group" id="figures-04" data-id="04">
   </div><br>  
 &emsp;&emsp;上图中初始点是3簇，它们均有50点，均满足高斯分布。一对的距离是另一对的5倍。
-&emsp;&emsp;上图实验结果如下：perplexity=50的时候，几何结构非常好。<50的时候，它们间距都差不多。=100的时候，其中一个簇非常小。=50的时候，结果非常“理想”，是不是意味着设置成50，我们总能看到好的结果？ &emsp;&emsp;sadly,="" no！="" 如果我们增加了点数，就需要增加perplexity进行补偿。下面这个实验吧点数增加到200。="" <div="" class="l-page-outset tsne-group" id="figures-05" data-id="05">
-  <br>
+&emsp;&emsp;上图实验结果如下：perplexity=50的时候，几何结构非常好。<50的时候，它们间距都差不多。=100的时候，其中一个簇非常小。=50的时候，结果非常“理想”，是不是意味着设置成50，我们总能看到好的结果？ &emsp;&emsp;sadly,="" no！="" 如果我们增加了点数，就需要增加perplexity进行补偿。下面这个实验吧点数增加到200。="" <br=""><div class="l-page-outset tsne-group" id="figures-05" data-id="05">
+  </div><br>
 
 ### 5、随机点的结果并不总是随机的
 &emsp;&emsp;一个典型的陷阱是，你在真正的随机数据中看到了模式。
 下面一个实验是：500个服从单位高斯分布的点，数据集是100维的。下面的original图是前两维数据的映射。
- <div class="l-page-outset tsne-group" id="figures-06" data-id="06">
+ <br><div class="l-page-outset tsne-group" id="figures-06" data-id="06">
   </div><br>  
 &emsp;&emsp;perplexity=2的时候，呈现戏剧性的聚类，如果就此发现了数据结构，你可能认为自己中了头彩！   
 &emsp;&emsp;从上面所有的实验可以看出perplexity比较低的时候可能会导致这类的分布。识别这些欺骗性的块是识别t-SNE图的一项重要部分。事实上，上图这些特征非常接近于球面上的均匀分布：均匀分布，在点之间的空间大致相等。看到这，t-sne可能比所有线性映射都更精确。
@@ -776,11 +776,11 @@
 
 ### 6、有时，你会看到一些形状
 &emsp;&emsp;让我们看一下在50维空间中与轴对齐的高斯分布，在这里，坐标i的标准偏差是1/i。也就是说，我们看到的是一个稍长的椭球点云。
- <div class="l-page-outset tsne-group" id="figures-07" data-id="07">
+ <br><div class="l-page-outset tsne-group" id="figures-07" data-id="07">
   </div><br>  
 &emsp;&emsp;从上图的结果可以看到，perplexity足够大的时候，稍长的形状很容易看到。但=2的时候，无意义的簇开始占主导。有时候，在特定的perplexity，可以看到特定的形状。   
 &emsp;&emsp;下图的数据是2维平面上75点的两簇数据。平行线排列，有一点噪声。
-<div class="l-page-outset tsne-group" id="figures-08" data-id="08">
+<br><div class="l-page-outset tsne-group" id="figures-08" data-id="08">
   </div> <br> 
 &emsp;&emsp;线条弯曲解释：t-sne尝试扩大数据的密集区域。因为簇的中间区域比边缘区域有更大的密度，t-sne会放大这个特征。
 
@@ -788,21 +788,21 @@
 
 ### 7、拓扑数据，你可能需要更多的图
 &emsp;&emsp;一个典型的拓扑特征是包含。下图的数据源是：两组50维的数据，各有70点。它们都是从关于原点对称的高斯分布中取样的。但是，一个数据点的分布是另一个的50倍。“小”分布实际上包含在大的分布中。
-<div class="l-page-outset tsne-group" id="figures-09" data-id="09">
+<br><div class="l-page-outset tsne-group" id="figures-09" data-id="09">
   </div><br>  
 &emsp;&emsp;perplexity=30的时候，内群的大小被过分夸大。perplexity=50的时候，外群变成了一个圆一样的结构，这个图试图描述所有的点都与内群的距离相同的事实（实际不是如此）。如果单独看外群，可能会认为它是一个一维的结构。
 但是更复杂的拓扑结构呢？   
 &emsp;&emsp;下图原始结构是一个俩环相互嵌套的结构。perplexity比较小的时候，两环分离了！
-<div class="l-page-outset tsne-group" id="figures-10" data-id="10">
+<br><div class="l-page-outset tsne-group" id="figures-10" data-id="10">
   </div><br>   
 &emsp;&emsp;下图是一个三叶草结构的数据。
-<div class="l-page-outset tsne-group" id="figures-11" data-id="11">
+<br><div class="l-page-outset tsne-group" id="figures-11" data-id="11">
   </div> <br>   
 &emsp;&emsp;下图是三叶草结构perplexity=2的5次运行结果。（正如前面所说，t-sne每次运行，可能得到的结果都不一样，即使设置的参数一样）
-<div class="l-page-outset tsne-group" id="figures-12" data-id="12">
+<br><div class="l-page-outset tsne-group" id="figures-12" data-id="12">
   </div> <br>
 &emsp;&emsp;下图是三叶草结构perplexity=50的5次运行结果。（可以看到，perplexity不能设置得太小）
-<div class="l-page-outset tsne-group" id="figures-13" data-id="13">
+<br><div class="l-page-outset tsne-group" id="figures-13" data-id="13">
   </div> <br> 
 
 
@@ -1188,7 +1188,7 @@
 </50的时候，它们间距都差不多。=100的时候，其中一个簇非常小。=50的时候，结果非常“理想”，是不是意味着设置成50，我们总能看到好的结果？>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月07日 02:49</p>
+        <p>最后更新： 2018年07月07日 02:52</p>
         <p>原始链接： <a class="post-url" href="/2018/07/07/md+html_complex/" title="md+html_complex">https://www.xunhanliu.top/2018/07/07/md+html_complex/</a></p>
         <footer>
             <a href="https://www.xunhanliu.top">
