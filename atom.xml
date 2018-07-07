@@ -94,33 +94,6 @@
   </entry>
   
   <entry>
-    <title>test</title>
-    <link href="https://www.xunhanliu.top/2018/07/04/test/"/>
-    <id>https://www.xunhanliu.top/2018/07/04/test/</id>
-    <published>2018-07-03T16:58:20.000Z</published>
-    <updated>2018-07-05T14:24:16.394Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试图片链接<br><img src="./Cat.jpg" alt="图片标题"><br><img src="/2018/07/04/test/Cat.jpg" title="[title]"><br>连接为：&lt;%- url_for(post.path) %&gt;<br>连接1为：&lt;%- url_for(path) %&gt;<br>连接2为：&lt;%- url_for(page.path) %&gt;<br>ssss</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;测试图片链接&lt;br&gt;&lt;img src=&quot;./Cat.jpg&quot; alt=&quot;图片标题&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2018/07/04/test/Cat.jpg&quot; title=&quot;[title]&quot;&gt;&lt;br&gt;连接为：&amp;lt;%- url_for(post.path) %&amp;gt;
-      
-    
-    </summary>
-    
-      <category term="mCat1" scheme="https://www.xunhanliu.top/categories/mCat1/"/>
-    
-    
-      <category term="mtag1" scheme="https://www.xunhanliu.top/tags/mtag1/"/>
-    
-      <category term="mtag2" scheme="https://www.xunhanliu.top/tags/mtag2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://www.xunhanliu.top/2017/08/01/hello-world/"/>
     <id>https://www.xunhanliu.top/2017/08/01/hello-world/</id>
