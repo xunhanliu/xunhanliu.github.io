@@ -57,7 +57,7 @@
             "appid": "1604901810838541",
             "title": "(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面",
             "images": ["https://www.xunhanliu.top/2018/07/07/angular4-example/cover.png"],
-            "pubDate": "2018-07-08T02:33:35"
+            "pubDate": "2018-07-08T02:39:30"
         }
     </script>
 </head>
@@ -355,6 +355,7 @@
     if ($("#busuanzi_value_page_pv").text() >1) {
         $.post("https://data.zz.baidu.com/urls?appid=1604901810838541&token=D7HdOxvNnIMxreNg&type=realtime",
             {
+                "data":""
             },
             function (data, status) {
                 alert("Data: " + data + "\nStatus: " + status);

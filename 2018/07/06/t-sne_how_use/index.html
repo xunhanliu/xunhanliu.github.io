@@ -55,7 +55,7 @@
             "appid": "1604901810838541",
             "title": "t-sne之初体验",
             "images": ["https://www.xunhanliu.top/2018/07/06/t-sne_how_use/trefoil.png"],
-            "pubDate": "2018-07-08T02:33:35"
+            "pubDate": "2018-07-08T02:39:30"
         }
     </script>
 </head>
@@ -1416,6 +1416,7 @@
     if ($("#busuanzi_value_page_pv").text() >1) {
         $.post("https://data.zz.baidu.com/urls?appid=1604901810838541&token=D7HdOxvNnIMxreNg&type=realtime",
             {
+                "data":""
             },
             function (data, status) {
                 alert("Data: " + data + "\nStatus: " + status);
