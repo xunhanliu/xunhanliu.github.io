@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-06T20:46:27.049Z</updated>
+  <updated>2018-07-07T06:50:03.703Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面</title>
+    <link href="https://www.xunhanliu.top/2018/07/07/angular4-example/"/>
+    <id>https://www.xunhanliu.top/2018/07/07/angular4-example/</id>
+    <published>2018-07-07T06:37:36.000Z</published>
+    <updated>2018-07-07T06:50:03.703Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="./cover.png" alt="系统的一张截图"></p><h4 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a><a href="https://blog.csdn.net/rotating_windmill/article/details/72630009" target="_blank" rel="noopener">原文链接</a><br></h4><h4 id="系统演示链接"><a href="#系统演示链接" class="headerlink" title="系统演示链接"></a><a href="../../../../projects/angular4-example">系统演示链接</a><br></h4><h4 id="源码链接"><a href="#源码链接" class="headerlink" title="源码链接"></a><a href="https://github.com/myopenresources/cc" target="_blank" rel="noopener">源码链接</a></h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;./cover.png&quot; alt=&quot;系统的一张截图&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;原文链接&quot;&gt;&lt;a href=&quot;#原文链接&quot; class=&quot;headerlink&quot; title=&quot;原文链接&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://blog.csdn.ne
+      
+    
+    </summary>
+    
+      <category term="project" scheme="https://www.xunhanliu.top/categories/project/"/>
+    
+    
+      <category term="angular4" scheme="https://www.xunhanliu.top/tags/angular4/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在hexo上编写高级markdown</title>

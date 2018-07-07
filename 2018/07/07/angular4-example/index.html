@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面 | xunhan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="xunhan,xunhan's Blog" />
+  
+  <meta name="description" content="原文链接系统演示链接源码链接">
+<meta name="keywords" content="angular4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面">
+<meta property="og:url" content="https://www.xunhanliu.top/2018/07/07/angular4-example/index.html">
+<meta property="og:site_name" content="xunhan">
+<meta property="og:description" content="原文链接系统演示链接源码链接">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.xunhanliu.top/2018/07/07/angular4-example/cover.png">
+<meta property="og:updated_time" content="2018-07-07T06:50:03.703Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面">
+<meta name="twitter:description" content="原文链接系统演示链接源码链接">
+<meta name="twitter:image" content="https://www.xunhanliu.top/2018/07/07/angular4-example/cover.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/pace.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    
+
+    
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?114240642741121d01f949325241a728";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+    
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">训瀚的博客</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                    <a  href="/categories/project">
+                        <i class="fa fa-steam"></i>
+                        <span>Project</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        训瀚的博客
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        低调、低调、再低调
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="home" title="home" target="_blank" href="//www.xunhanliu.top">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a class="github" title="Github" target="_blank" href="//github.com/xunhanliu">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a class="csdn" title="CSDN" target="_blank" href="//blog.csdn.net/qqhanhan">
+                            <i class="fa fa-csdn fa-2x"></i></a>
+                    
+                        <a class="weibo" title="sina" target="_blank" href="//weibo.com/u/5493103907?nick=6%E5%A4%A7%E8%BD%A6%E8%9B%8B">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a class="qq" title="QQ" target="_blank" href="//user.qzone.qq.com/1638081534">
+                            <i class="fa fa-qq fa-2x"></i></a>
+                    
+                        <a class="weixin" title="WeiXin" target="_blank" href="//wx.qq.com/">
+                            <i class="fa fa-weixin fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-angular4-example" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      (转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/project/">project</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-07
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p><img src="./cover.png" alt="系统的一张截图"></p>
+<h4 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a><a href="https://blog.csdn.net/rotating_windmill/article/details/72630009" target="_blank" rel="noopener">原文链接</a><br></h4><h4 id="系统演示链接"><a href="#系统演示链接" class="headerlink" title="系统演示链接"></a><a href="../../../../projects/angular4-example">系统演示链接</a><br></h4><h4 id="源码链接"><a href="#源码链接" class="headerlink" title="源码链接"></a><a href="https://github.com/myopenresources/cc" target="_blank" rel="noopener">源码链接</a></h4>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月07日 14:50</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/07/angular4-example/" title="(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面">https://www.xunhanliu.top/2018/07/07/angular4-example/</a></p>
+        <footer>
+            <a href="https://www.xunhanliu.top">
+                <img src="/images/logo.png" alt="xunhanliu">
+                xunhanliu
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃鸡
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xunhanliu.top/2018/07/07/angular4-example/&title=《(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面》 — xunhan&pic=2018/07/07/angular4-example/cover.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xunhanliu.top/2018/07/07/angular4-example/&title=《(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面》 — xunhan&source=这是训瀚的博客" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.xunhanliu.top/2018/07/07/angular4-example/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面》 — xunhan&url=https://www.xunhanliu.top/2018/07/07/angular4-example/&via=https://www.xunhanliu.top" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.xunhanliu.top/2018/07/07/angular4-example/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://www.xunhanliu.top/2018/07/07/angular4-example/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/angular4/" class="color4">angular4</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#原文链接"><span class="post-toc-text">原文链接</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#系统演示链接"><span class="post-toc-text">系统演示链接</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#源码链接"><span class="post-toc-text">源码链接</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/07/advanced-markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">如何在hexo上编写高级markdown</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+        <section id="comments" class="gitment_comment"></section>
+            <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            id: 'Sat Jul 07 2018 14:37:36 GMT+0800',//��ʱ����Ϊ���µ�ʶ��id ,��issue�ﻹ���ܿ������±����
+            owner: 'xunhanliu',
+            repo: 'blog_comment',
+            oauth: {
+                client_id: '58ab67437e49f15c2c59',
+                client_secret: '2b54d57de21f62871fdc902267862eb0088bd336',
+            },
+        })
+        gitment.render('comments')
+    </script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 xunhanliu<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://www.xunhanliu.top",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/markdown/">markdown</a><a class="category-link" href="/categories/project/">project</a><a class="category-link" href="/categories/test/">test</a><a class="category-link" href="/categories/开源项目/">开源项目</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/angular4/" style="font-size: 10px;">angular4</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/test/" style="font-size: 20px;">test</a> <a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/开源项目/" style="font-size: 15px;">开源项目</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/categories/project">
+                    <i class="fa fa-steam"></i><span>Project</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/angular4/" style="font-size: 10px;">angular4</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/test/" style="font-size: 20px;">test</a> <a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/开源项目/" style="font-size: 15px;">开源项目</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
