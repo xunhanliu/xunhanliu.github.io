@@ -55,7 +55,7 @@
             "appid": "1604901810838541",
             "title": "Hello World",
             "images": ["https://www.xunhanliu.top/"],
-            "pubDate": "2018-07-08T02:26:09"
+            "pubDate": "2018-07-08T02:30:34"
         }
     </script>
 </head>
@@ -368,6 +368,8 @@
     <script>cambrian.render('tail')</script>
 </div>
 <script type="text/javascript">
+    setTimeout(function(){
+//ajax do something
     if ($("#busuanzi_value_page_pv").text() >1) {
         $.post("http://data.zz.baidu.com/urls?appid=1604901810838541&token=D7HdOxvNnIMxreNg&type=realtime",
             {
@@ -376,6 +378,7 @@
                 alert("Data: " + data + "\nStatus: " + status);
             });
     }
+    },5000);
 </script>
 
 </section>
