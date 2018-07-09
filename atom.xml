@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.xunhanliu.top/"/>
-  <updated>2018-07-07T06:50:03.703Z</updated>
+  <updated>2018-07-09T09:17:56.965Z</updated>
   <id>https://www.xunhanliu.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>心堵得慌</title>
+    <link href="https://www.xunhanliu.top/2018/07/09/heart-stuck/"/>
+    <id>https://www.xunhanliu.top/2018/07/09/heart-stuck/</id>
+    <published>2018-07-09T09:02:53.000Z</published>
+    <updated>2018-07-09T09:17:56.965Z</updated>
+    
+    <content type="html"><![CDATA[<p> <img src="./go_to_your mother.jpg" alt="go to your mother"><br> &nbsp;&nbsp;自己的”home page”算个屁，要不是顾忌别人的”home page”，早<br>  <img src="./cnm.jpg" alt="草泥马">把你全家全都访问一遍。还高谈politeness，我跟<img src="./mad_dog.jpg" alt="疯狗">谈politeness，能谈的通吗？别侮辱这个词了好不？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; &lt;img src=&quot;./go_to_your mother.jpg&quot; alt=&quot;go to your mother&quot;&gt;&lt;br&gt; &amp;nbsp;&amp;nbsp;自己的”home page”算个屁，要不是顾忌别人的”home page”，早&lt;br&gt;  &lt;img src=&quot;./cnm
+      
+    
+    </summary>
+    
+      <category term="little_things" scheme="https://www.xunhanliu.top/categories/little-things/"/>
+    
+    
+      <category term="little_things" scheme="https://www.xunhanliu.top/tags/little-things/"/>
+    
+  </entry>
   
   <entry>
     <title>(转)一个基于Angular4+Bootstrap4+Scss的后台管理系统界面</title>
@@ -175,6 +200,31 @@
   </entry>
   
   <entry>
+    <title>test_Md+Html</title>
+    <link href="https://www.xunhanliu.top/2017/08/01/testMd+Html/"/>
+    <id>https://www.xunhanliu.top/2017/08/01/testMd+Html/</id>
+    <published>2017-07-31T16:00:00.000Z</published>
+    <updated>2018-07-06T18:12:20.241Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="内联style"><a href="#内联style" class="headerlink" title="内联style"></a><div style="background-color: #f00;">内联style</div></h2><h1 id="又一个title"><a href="#又一个title" class="headerlink" title="又一个title"></a>又一个title</h1><hr><p></p><h2 class="headerlink">h2标签</h2><p></p><p><link href="../../../../css/test.css" rel="stylesheet"></p><p><div id="outCSS">外联style</div></p><h1 id="再来一个title"><a href="#再来一个title" class="headerlink" title="再来一个title"></a>再来一个title</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
     <title>md文件模板+html</title>
     <link href="https://www.xunhanliu.top/2017/08/01/testHtml/"/>
     <id>https://www.xunhanliu.top/2017/08/01/testHtml/</id>
@@ -192,31 +242,6 @@
       
             
             &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io
-      
-    
-    </summary>
-    
-      <category term="test" scheme="https://www.xunhanliu.top/categories/test/"/>
-    
-    
-      <category term="test" scheme="https://www.xunhanliu.top/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test_Md+Html</title>
-    <link href="https://www.xunhanliu.top/2017/08/01/testMd+Html/"/>
-    <id>https://www.xunhanliu.top/2017/08/01/testMd+Html/</id>
-    <published>2017-07-31T16:00:00.000Z</published>
-    <updated>2018-07-06T18:12:20.241Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="内联style"><a href="#内联style" class="headerlink" title="内联style"></a><div style="background-color: #f00;">内联style</div></h2><h1 id="又一个title"><a href="#又一个title" class="headerlink" title="又一个title"></a>又一个title</h1><hr><p></p><h2 class="headerlink">h2标签</h2><p></p><p><link href="../../../../css/test.css" rel="stylesheet"></p><p><div id="outCSS">外联style</div></p><h1 id="再来一个title"><a href="#再来一个title" class="headerlink" title="再来一个title"></a>再来一个title</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>
