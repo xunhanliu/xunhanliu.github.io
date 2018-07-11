@@ -8,18 +8,18 @@
   
     <meta name="keywords" content="xunhan,xunhan's Blog" />
   
-  <meta name="description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
+  <meta name="description" content="t-sne第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
 <meta name="keywords" content="test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="md+html_complex">
 <meta property="og:url" content="https://www.xunhanliu.top/2018/07/07/md+html_complex/index.html">
 <meta property="og:site_name" content="xunhan">
-<meta property="og:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
+<meta property="og:description" content="t-sne第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-11T14:21:59.935Z">
+<meta property="og:updated_time" content="2018-07-11T17:26:16.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="md+html_complex">
-<meta name="twitter:description" content="t-sen第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
+<meta name="twitter:description" content="t-sne第一贱开锋1、简介原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被 Maaten and Hinton引入(PDF)，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -55,7 +55,7 @@
             "appid": "1604901810838541",
             "title": "md+html_complex",
             "images": ["https://www.xunhanliu.top/2018/07/07/md+html_complex/trefoil.png"],
-            "pubDate": "2018-07-11T22:28:48"
+            "pubDate": "2018-07-12T02:26:56"
         }
     </script>
 </head>
@@ -183,7 +183,7 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h2 id="t-sen第一贱开锋"><a href="#t-sen第一贱开锋" class="headerlink" title="t-sen第一贱开锋"></a>t-sen第一贱开锋</h2><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><p><a href="https://distill.pub/2016/misread-tsne/" target="_blank" rel="noopener">原文链接</a><br>&emsp;&emsp;t-sen（非线性）在2008年首次被 <a href="http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf" target="_blank" rel="noopener">Maaten and Hinton引入(PDF)</a>，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sen每次输出的图像都是不固定。<br></p>
+            <h2 id="t-sne第一贱开锋"><a href="#t-sne第一贱开锋" class="headerlink" title="t-sne第一贱开锋"></a>t-sne第一贱开锋</h2><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><p><a href="https://distill.pub/2016/misread-tsne/" target="_blank" rel="noopener">原文链接</a><br>&emsp;&emsp;t-sne（非线性）在2008年首次被 <a href="http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf" target="_blank" rel="noopener">Maaten and Hinton引入(PDF)</a>，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sne每次输出的图像都是不固定。<br></p>
 <p><link href="../../../../css/md+html_complex/material-icons.css" rel="stylesheet"></p>
 <script src="../../../../js/md+html_complex/d3.min.js"></script>
 <script src="../../../../js/md+html_complex/tsne.js"></script>
@@ -1203,7 +1203,7 @@
 </50的时候，它们间距都差不多。=100的时候，其中一个簇非常小。=50的时候，结果非常“理想”，是不是意味着设置成50，我们总能看到好的结果？>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月11日 22:21</p>
+        <p>最后更新： 2018年07月12日 01:26</p>
         <p>原始链接： <a class="post-url" href="/2018/07/07/md+html_complex/" title="md+html_complex">https://www.xunhanliu.top/2018/07/07/md+html_complex/</a></p>
         <footer>
             <a href="https://www.xunhanliu.top">
@@ -1321,7 +1321,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#t-sen第一贱开锋"><span class="post-toc-text">t-sen第一贱开锋</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#t-sne第一贱开锋"><span class="post-toc-text">t-sne第一贱开锋</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -1340,7 +1340,7 @@
   
   
     <a href="/2018/07/06/t-sne_how_use/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">t-sne之初体验</span>
+      <span class="article-nav-title">t-sne web版</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   

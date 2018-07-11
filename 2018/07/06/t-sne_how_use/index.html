@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>t-sne之初体验 | xunhan</title>
+  <title>t-sne web版 | xunhan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="xunhan,xunhan's Blog" />
   
-  <meta name="description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
+  <meta name="description" content="t-sne第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
 <meta name="keywords" content="test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="t-sne之初体验">
+<meta property="og:title" content="t-sne web版">
 <meta property="og:url" content="https://www.xunhanliu.top/2018/07/06/t-sne_how_use/index.html">
 <meta property="og:site_name" content="xunhan">
-<meta property="og:description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
+<meta property="og:description" content="t-sne第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-11T14:21:34.628Z">
+<meta property="og:updated_time" content="2018-07-11T18:26:09.509Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="t-sne之初体验">
-<meta name="twitter:description" content="t-sen第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sen（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
+<meta name="twitter:title" content="t-sne web版">
+<meta name="twitter:description" content="t-sne第一贱开锋1、简介 原文链接&amp;emsp;&amp;emsp;t-sne（非线性）在2008年首次被     van der Maaten and Hinton in 2008 [1]     引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -53,9 +53,9 @@
             "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
             "@id": "https://www.xunhanliu.top/2018/07/06/t-sne_how_use/",
             "appid": "1604901810838541",
-            "title": "t-sne之初体验",
+            "title": "t-sne web版",
             "images": ["https://www.xunhanliu.top/2018/07/06/t-sne_how_use/trefoil.png"],
-            "pubDate": "2018-07-11T22:28:48"
+            "pubDate": "2018-07-12T02:26:56"
         }
     </script>
 </head>
@@ -154,7 +154,7 @@
         
   
     <h1 class="post-title" itemprop="name">
-      t-sne之初体验
+      t-sne web版
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -184,10 +184,10 @@
       
             
             
-<h3 id="t-sen第一贱开锋"><a href="#t-sen第一贱开锋" class="headerlink" title="t-sen第一贱开锋"></a>t-sen第一贱开锋</h3><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3>
-<p><a href="https://distill.pub/2016/misread-tsne/" target="_blank" rel="noopener">原文链接</a><br>&emsp;&emsp;t-sen（非线性）在2008年首次被
+<h3 id="t-sne第一贱开锋"><a href="#t-sne第一贱开锋" class="headerlink" title="t-sne第一贱开锋"></a>t-sne第一贱开锋</h3><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3>
+<p><a href="https://distill.pub/2016/misread-tsne/" target="_blank" rel="noopener">原文链接</a><br>&emsp;&emsp;t-sne（非线性）在2008年首次被
     <dt-cite key="maaten2008visualizing"><span id="citation-0" data-hover-ref="dt-cite-hover-box-0">van der Maaten and Hinton in 2008 <span class="citation-number">[1]</span></span></dt-cite>
-    引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sen每次输出的图像都是不固定。
+    引入，在机器学习领域应用很广泛。它能把多维数据映射到2维数据，从而在二维平面上显示（分别对应直角坐标系的x,y。此时横纵坐标是无意义的。例如，x不是某几个维度的线性组合，所以没法解释x轴表示什么意义。其他的降维方法，降维至2维平面上也可以这样显示）。当参数调整不合适的时候，整个图像容易被误读。<br>&emsp;&emsp;这里主要关注它的参数：“perplexity”。这个参数从某种意义上来说，是对邻居点的猜测。一般取55到50。注：t-sne每次输出的图像都是不固定。
 </p>
 
 
@@ -1238,8 +1238,8 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月11日 22:21</p>
-        <p>原始链接： <a class="post-url" href="/2018/07/06/t-sne_how_use/" title="t-sne之初体验">https://www.xunhanliu.top/2018/07/06/t-sne_how_use/</a></p>
+        <p>最后更新： 2018年07月12日 02:26</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/06/t-sne_how_use/" title="t-sne web版">https://www.xunhanliu.top/2018/07/06/t-sne_how_use/</a></p>
         <footer>
             <a href="https://www.xunhanliu.top">
                 <img src="/images/logo.png" alt="xunhanliu">
@@ -1296,7 +1296,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne之初体验》 — xunhan&pic=2018/07/06/t-sne_how_use/trefoil.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne web版》 — xunhan&pic=2018/07/06/t-sne_how_use/trefoil.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -1306,7 +1306,7 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne之初体验》 — xunhan&source=这是训瀚的博客" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&title=《t-sne web版》 — xunhan&source=这是训瀚的博客" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
@@ -1316,7 +1316,7 @@
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《t-sne之初体验》 — xunhan&url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&via=https://www.xunhanliu.top" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《t-sne web版》 — xunhan&url=https://www.xunhanliu.top/2018/07/06/t-sne_how_use/&via=https://www.xunhanliu.top" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -1356,7 +1356,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#t-sen第一贱开锋"><span class="post-toc-text">t-sen第一贱开锋</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、初步体验perplexity参数和step参数"><span class="post-toc-text">2、初步体验perplexity参数和step参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、簇的大小无意义"><span class="post-toc-text">3、簇的大小无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、簇之间的距离可能无意义"><span class="post-toc-text">4、簇之间的距离可能无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、随机点的结果并不总是随机的"><span class="post-toc-text">5、随机点的结果并不总是随机的
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#t-sne第一贱开锋"><span class="post-toc-text">t-sne第一贱开锋</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、简介"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、初步体验perplexity参数和step参数"><span class="post-toc-text">2、初步体验perplexity参数和step参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、簇的大小无意义"><span class="post-toc-text">3、簇的大小无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、簇之间的距离可能无意义"><span class="post-toc-text">4、簇之间的距离可能无意义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、随机点的结果并不总是随机的"><span class="post-toc-text">5、随机点的结果并不总是随机的
     </span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、有时，你会看到一些形状"><span class="post-toc-text">6、有时，你会看到一些形状</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、拓扑数据，你可能需要更多的图"><span class="post-toc-text">7、拓扑数据，你可能需要更多的图
     </span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、结论"><span class="post-toc-text">8、结论</span></a></li></ol>
         </nav>
